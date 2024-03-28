@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <title>Exercício 01</title>
+    </head>
+    <body>
+        <h1>Criando páginas com <u>HTML</u></h1>
+        <hr />
+
+        <h2 id="inicio">Sumário</h2>
+        <ul>
+            <li><a href="#o-que-e">O que é <strong>HTML</strong>?</a></li>
+            <li><a href="#o-que-fazer">Coisas que podemos fazer com <strong>HTML</strong></a></li>
+            <li><a href="#estrutura-base">Estrutura base do <strong>HTML</strong></a></li>
+            <li><a href="#mais-tags">Mais Tags HTML</a></li>
+            <li><a href="#tags-formatação">Tags de formatação de texto</li>
+            <li><a href="#tags-listas">Como fazer uma lista</li>
+            <li><a href="#tags-extras">Extra</li>
+            <li><a href="#menções">Menções</a></li>
+        </ul>
+        <hr />
+
+        <h2 id="o-que-e">O que é <strong>HTML</strong>?</h2>
+        <p>O HTML (Hyper Text Markup Language) não é uma linguagem de programação, mas sim um arquivo de texto
+            que contém delimitadores por nomes que um navegador consegue interpretar. Cada um desses 
+            delimitadores têm uma função e comportamento distinto um do outro.</p>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <hr />
+        
+        <h2 id="o-que-fazer">Coisas que podemos fazer com HTML: </h2>
+        <ul>
+            <li><strong>Criar estrutura de página:</strong> O <strong>HTML</strong> é usado para criar a 
+            estrutura básica de uma página web, incluindo cabeçalhos, parágrafos, listas, tabelas e divs</li>
+            <li><strong>Inserir texto e mídia:</strong> Podemos adicionar texto, imagens, vídeos e áudios em 
+            páginas web utilizando <strong><a href= "#tag-html">tags HTML</a></strong> específicas.</li>
+            <li><strong>Links e navegação:</strong> O <strong>HTML</strong> permite a criação de links para 
+            outras páginas web, recursos dentro da mesma página ou mesmo para download de arquivos.</li>
+        </ul>
+        <p>Resumidamente falando, o <strong>HTML</strong> é a base para a criação de páginas web e oferece
+        uma ampla gama de recursos para criarmos experiências online ricas e interativas.</p>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <hr />
+
+        <h2 id="estrutura-base">Aqui está um exemplo de estrutura base de um HTML:</h2>
+        <p>&lt;!DOCTYPE html&gt;<br>
+        &lt;html lang="pt-BR"&gt;<br>
+        &lt;head&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+        &lt;/body&gt;<br>
+        &lt;html&gt;</p>
+
+        <h3 id="tag-html">Declaração de documento</h3>
+        <ul>
+            <li>Todo documento HTML <strong>DEVE</strong> começar com <strong>&lt;!DOCTYPE html&gt;</strong>,
+                 pois é ela que informará o navegador sobre o tipo de documento que ele irá ler;</li>
+            <li><strong>&lt;!DOCTYPE html&gt;</strong> não é uma tag, mas sim uma declaração de documento;</li>
+            <li><strong>&lt;!DOCTYPE html&gt; NÃO</strong> é "case sensitive".
+        </ul>
+            
+        <h3>&lt;html&gt;</h3>
+        <ul>
+            <li>A tag <strong>&lt;html&gt;</strong> representa a raíz de um doumento HTML;</li>
+            <li>É o contêiner para todos os outros <u><a href="#menções-elementos">elementos</a></u><sup>*</sup> HTML (exceto a declaração <strong>&lt;!DOCTYPE html&gt</strong>);</li>
+            <li>Devemos sempre incluir o atributo <u><a href="#menções-lang">lang</a></u><sup>*</sup> dentro da tag &lt;html&gt; para declarar a língua
+            da página web.</li>
+            </ul>
+
+        <h3>&lt;head&gt;</h3>
+        <ul>
+            <li>A tag <strong>&lt;head&gt;</strong> é um contêiner para metadados e está localizado entre a tag &lt;html&gt;
+                e a tag &lt;body&gt;;</li>
+            <li>Metadados são dados sobre o documento HTML, que não são exibidos ao usuário;</li>
+            <li>Existem algumas tags que podem estar dentro da &lt;head&gt;, como &lt;title&gt, 
+                &lt;style&gt, &lt;script&gt, etc..</li>
+            <li><strong>&lt;title&gt</strong> é uma tag obrigatória em todo documento HTML.</li>
+        </ul>
+
+        <h3>&lt;title&gt</h3>
+        <ul>
+            <li>Define um título para a barra de ferramentas do navegador;</li>
+            <li>Define um título para a página quando é adicionada aos favoritos</li>
+            <li>Exibe um título para a página nos resultados do mecanismo de pesquisa</li>
+        </ul>
+
+        <h3>&lt;body&gt</h3>
+        <ul>
+            <li>Define o corpo do documento HTML;</li>
+            <li>A tag <strong>&lt;body&gt</strong> contém todo o conteúdo de um documento HTML, como 
+                parágrafos, imagens, hiperlinks, tabelas, listas, etc.</li>
+            <li>Só pode haver um <strong>&lt;body&gt</strong> em um documento HTML.</li>
+        </ul>
+        <p>Essa é a estrutura base de um documento HTML, com isso, já podemos criar uma página web.</p>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <hr />
+
+        <h2 id="mais-tags">Mais Tags HTML</h2>
+        <p>Existem algumas outras tags HTML que podem ajudar de acordo com o objetivo da página que estamos criando. A seguir
+            estarei listando mais algumas tags:</p>
+        <h3>&lt;h1&gt ao &lt;h6&gt;</h3>
+        <ul>
+            <li>São usados para definir o tamanho de um título ou subtítulo;</li>
+            <li>&lt;h1&gt; define o título principal enquanto o &lt;h2&gt; em diante se tornam subtítulos;</li>
+            <li>Uma boa prática é haver apenas um único &lt;h1&gt;.</li>
+        </ul>
+
+        <h3>&lt;p&gt;</h3>
+        <ul>
+            <li>Define um parágrafo no documento HTML;</li>
+            <li>O navegador define uma única linha em branco para cada &lt;p&gt;;</li>
+            <li>Caso necessário haver quebra de linha, deve-se usar uma outra tag (&lt;br&gt).</li>
+        </ul>
+        <h3>&lt;br&gt;</h3>
+        <ul>
+            <li>Adiciona uma única quebra de linha em um parágrafo;</li>
+            <li>Diferente da maioria das tags, a &lt;br&gt; é uma tag vazia, onde não existe um fechamento, como &lt;h1&gt &lt;/h1&gt;</li>
+            <li>Use-a para quebra de linha e não para espaçamento entre parágrafos.</li>
+        </ul>
+        <h3>&lt;hr&gt;</h3>
+        <ul>
+            <li>Adiciona uma linha horizontal no documento HTML;</li>
+            <li>É usada para separação de conteúdo na página;</li>
+            <li>Também é uma tag vazia.</li>
+        </ul>
+        <h3>&lt;blockquote&gt;</h3>
+        <ul>
+            <li>Especifíca uma seção para citar as suas fontes;</li>
+            <li>Navegadores geralmente mentêm as linhas de &lt;blockquote&gt identadas.</li>
+        </ul>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <hr>
+
+        <h2 id="tags-formatação">Tags de formatação de texto</h2>
+        <h3>&lt;i&gt;</h3>
+        <ul>
+            <li>Deixa o texto, ou parte dele, em <i>itálico</i>;</li>
+            <li>Frequentemente usada para indicar um termo técnico, uma frase de outro idioma, um pensamento, etc.</li>
+        </ul>
+        <h3>&lt;u&gt;</h3>
+        <ul>
+            <li>Deixa o texto, ou parte dele, <u>sublinhado</u>;</li>
+            <li>É recomendado não usar em casos onde há hiperlinks, pois pode confundir.</li>
+        </ul>
+        <h3>&lt;mark&gt;</h3>
+        <ul>
+            <li>Define o texto, ou parte dele, que deve ser <mark>marcado</mark> ou <mark>destacado</mark>.</li>
+        </ul>
+        <h3>&lt;small&gt;</h3>
+        <ul>
+            <li>Define o texto, ou parte dele, como um <small>texto menor</small>;</li>
+            <li>Costuma ser usado para comentários secundários ou, até mesmo, descrever um direito autoral, por exemplo.</li>
+        </ul>
+        <h3>&lt;strong&gt;</h3>
+        <ul>
+            <li>É usado para dar um <strong>destaque importante</strong> para um texto ou <strong>palavra</strong>;</li>
+            <li>Se quisermos deixar em negrito, devemos usar uma outra tag <b>(&lt;b&gt;)</b></li>
+        </ul>
+        <h3>&lt;sup&gt;</h3>
+        <ul>
+            <li>Define um <sup>texto sobrescrito</sup>;</li>
+            <li>O texto sobrescrito aparece meio caractere acima da linha normal e às vezes é renderizado em uma fonte menor;</li>
+            <li>Texto sobrescrito pode ser usado para notas de rodapé.</li>
+        </ul>
+        <h3>&lt;sub&gt;</h3>
+        <ul>
+            <li>Define um <sub>texto subscrito</sub>;</li>
+            <li>O texto subscrito aparece meio caractere abaixo da linha normal e às vezes é renderizado em uma fonte menor;</li>
+            <li>O texto subscrito pode ser usado para fórmulas químicas, como H<sub>2</sub>O.</li>
+        </ul>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <hr>
+
+        <h2 id="tags-listas">Criando listas</h2>
+        <h3>&lt;ul&gt;</h3>
+        <ul>
+            <li>Tag usada para criar uma lista não ordenada;</li>
+            <li>Você pode adicionar itens à sua lista usando &lt;li&gt;.</li>
+        </ul>
+        <h3>&lt;ol&gt;</h3>
+        <ul>
+            <li>Tag usada para criar uma lista ordenada;</li>
+            <li>Como nas listas não ordenadas, pode-se usar &lt;li&gt; para adicionar itens à lista.</li>
+        </ul>
+        <h3>&lt;li&gt;</h3>
+        <ul>
+            <li>Define uma lista de itens;</li>
+            <li>É usada dentro das listas (&lt;ul&gt;) e (&lt;ol&gt;);</li>
+            <li>Em (&lt;ul&gt;) a lista irá ser exibida em tópicos;</li>
+            <li>Em (&lt;ol&gt;) a lista irá ser exibida em números ou letras.</li>
+        </ul>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <hr>
+
+        <h2 id="tags-extras">Aqui está um extra!</h2>
+        <p>Existem algumas tags que podemos utilizar no nosso documento HTML como uma forma de interação com o usuário, criando caixas de textos,
+            imagens e links, tanto para outras páginas quanto para uma possível outra página do seu projeto!</p>
+
+        <h3>&lt;input&gt;</h3>
+        <ul>
+            <li>Cria um campo de entrada onde o usuário pode inserir dados;</li>
+            <li>É um dos mais importantes <a href="#menções-elementos"><u>elementos</u></a><sup>*</sup> do HTML;</li>
+            <li>Pode ser exibido de diversas maneiras, dependendo do atributo <a href="#menções-type"><u>type</u></a><sup>*</sup>;</li>
+        </ul>
+        <h3>&lt;img&gt;</h3>
+        <ul>
+            <li>É usado para adicionar uma imagem no documento;</li>
+            <li>A tag tem dois atributos importantes: <strong>src</strong> e <strong>alt</strong>;</li>
+            <li><strong>src</strong> especifica o caminho (URL) para a imagem;</li>
+            <li><strong>alt</strong> especifica um texto alternativo para a imagem, caso, por algum motivo, ela não puder ser exibida</li>
+            <li>É importante especificar dois atributos <a href="#menções-img"><u>(<strong>width</strong> e <strong>height</strong>)<sup>*</sup></u></a>;</li>
+        </ul>
+        <h3>&lt;a&gt;</h3>
+        <ul>
+            <li>É a tag responsável em definir hiperlinks, onde são usados para navegar de uma página a outra;</li>
+            <li>O atributo mais importante para a tag é o <strong>href</strong>, que indica o destino do link;</li>
+            <li>Outro atributo útil da tag &lt;a&gt; é o <strong>target</strong></li>
+            <li>Dentro do <strong>target</strong> existem dois importantes valores (<strong>_blank</strong> e <strong>_self</strong>);</li>
+            <li>"_blank" abre o link em uma nova página;</li>
+            <li>"_self" abre o link na mesma página;</li>
+        </ul>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <hr>
+
+        <h2 id="menções">Menções</h2>
+        <p id="menções-elementos"><strong><u>elementos</u></strong>: apenas mais um nome usado para nos referirmos às tags HTML.</p>
+        <p id="menções-lang"><u>lang</u>: linguagem de interpretação do navegador.</p>
+        <ul>
+            <li>&lt;html lang="pt-BR"&gt; (português do Brasil)</li>
+            <li>&lt;html lang="en"&gt; (inglês)</li>
+            <li>&lt;html lang="fr"&gt; (francês)</li>
+        </ul>
+        <p id="menções-type"><u>type</u>: é o atributo que especifica o tipo do &lt;input&gt;. Se caso não houver um atributo específico,
+        o tipo padrão será o <strong>type="text"</strong></p>
+        <ul>
+            <li><strong>type="button"</strong> (cria um botão clicável)</li>
+            <li><strong>type="checkbox"</strong> (cria uma caixa de seleção)</li>
+            <li><strong>type="password"</strong> (cria um campo para inserção de senha)</li>
+        </ul>
+        <p id="menções-img"><u>width</u>: é o atributo responsável no dimensionamento da altura da imagem.</p>
+        <p id="menções-img"><u>height</u>: é o atributo responsável no dimensionamento da largura da imagem.</p>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <hr>
+
+        <blockquote cite="https://www.w3schools.com">
+            W3Schools é um site educacional voltado ao aprendizado de tecnologias web. Seu conteúdo inclui tutoriais e referências relacionadas 
+            a HTML, CSS, JavaScript, JSON, PHP, Python, AngularJS, SQL, Bootstrap, Node.js, jQuery, XQuery, AJAX, XML, Java e entre muitos outros.
+        </blockquote>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <hr>
+    </body>
+</html>
